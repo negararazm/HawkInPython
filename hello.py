@@ -149,7 +149,9 @@ def hello():
     width = 0.5
     months = [1,2,3,4,5,6,7,8,9,10,11,12]
     fig, ax = plt.subplots()
-    plt.bar(months, counter1["TOTAL"], width, color='g')
+    plt.xlabel('months')
+    plt.ylabel('moveIns')
+    plt.bar(months, counter1["TOTAL"], width, color='c')
     buf = BytesIO()
     fig.savefig(buf, format='png')
     buf.seek(0)
