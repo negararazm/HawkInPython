@@ -1,5 +1,8 @@
 <html>
-	<pre> {{ data }} </pre>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/main.css') }}">
+{% block content %}
+	 {{ data.to_html() | safe }}
+{% endblock %}
 	<img src="data:image/png;base64,{{ fig }}">
 </html>
 

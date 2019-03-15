@@ -196,5 +196,5 @@ def fig(counter1):
     #///encoded = base64.b64encode(tmpfile.getvalue())
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(debug=True, host='0.0.0.0', port=80)
 
