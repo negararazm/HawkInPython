@@ -55,7 +55,7 @@ def hello():
         moveIns["bathrooms"] = mi["bathrooms"]["Float64"]
         moveInList.append(moveIns)
 
-    for lm in data4:
+    for lm in data2:
         leadMoveIns = {}
         datetime_moveIn= datetime.strptime(lm["moveInDate"]["Time"], '%Y-%m-%dT%H:%M:%SZ')
         if(len(lm["emailDateReceived"]["Time"])<=20):
@@ -74,7 +74,7 @@ def hello():
         leadMoveIns["bathrooms"] = lm["bathrooms"]["Float64"]
         leadMoveInList.append(leadMoveIns)
 
-        datetime dt
+        #datetime dt
         
 
     def defPricingGroup(community, bedrooms):
