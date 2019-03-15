@@ -2,6 +2,7 @@ FROM python:3.7.1
 
 COPY hello.py /
 ADD templates templates/
+ADD static static/
 	
 #RUN pip install pprint
 #RUN pip install uuid
